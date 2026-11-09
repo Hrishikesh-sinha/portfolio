@@ -482,6 +482,21 @@ body {
 
 .grid-item .item-details { 
   padding: 20px; 
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* pins the repo/live buttons to the bottom so cards with
+   different description lengths line up */
+.grid-item .item-details .project-links {
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.grid-item .item-details h3 {
+  color: var(--text-main);
+  font-size: 1rem;
 }
 
 .item-desc { 
@@ -507,6 +522,11 @@ body.light-theme {
 }
 
 
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+}
 
 .grid-item, .list-item {
   background: rgba(255, 255, 255, 0.03) !important; 
