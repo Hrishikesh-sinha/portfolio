@@ -2,42 +2,62 @@
 
 "use client";
 import {
-  Atom,
-  Sparkles,
-  Terminal,
-  Layers,
-  Database,
-  Coffee,
+  Microchip,
+  CircuitBoard,
+  Cpu,
   Code2,
-  Layout,
-  Palette,
-  Globe,
+  Terminal,
+  Zap,
+  Server,
+  Database,
+  Flame,
+  BrainCircuit,
+  Table,
+  ChartBar,
+  Atom,
+  Braces,
+  Sparkles,
+  Layers,
+  ChartLine,
+  Activity,
+  Coffee,
+  Triangle,
+  Cloud,
+  GitBranch,
 } from "lucide-react";
 
+// Row 1: embedded, backend and ML. Row 2: web, languages and deployment.
+// Every entry is used in at least one project on this site.
+const row1 = [
+  { Icon: Microchip, name: "ESP32", color: "#e7352c" },
+  { Icon: Code2, name: "C / C++ (Arduino)", color: "#00979d" },
+  { Icon: Cpu, name: "FreeRTOS", color: "#7dd3fc" },
+  { Icon: CircuitBoard, name: "I2C / Sensors", color: "#a3e635" },
+  { Icon: Terminal, name: "Python", color: "#ffd43b" },
+  { Icon: Zap, name: "FastAPI", color: "#009688" },
+  { Icon: Server, name: "Node.js / Express", color: "#339933" },
+  { Icon: Database, name: "PostgreSQL", color: "#4169e1" },
+  { Icon: Flame, name: "Firebase", color: "#ffca28" },
+  { Icon: BrainCircuit, name: "scikit-learn", color: "#f7931e" },
+  { Icon: Table, name: "Pandas / NumPy", color: "#a78bfa" },
+  { Icon: ChartBar, name: "SHAP", color: "#fb7185" },
+];
 
-const techIcons = [
+const row2 = [
   { Icon: Atom, name: "React", color: "#61dafb" },
+  { Icon: Braces, name: "TypeScript", color: "#3178c6" },
   { Icon: Sparkles, name: "JavaScript", color: "#f7df1e" },
-  { Icon: Terminal, name: "Node.js", color: "#339933" },
-  { Icon: Layers, name: "Express.js", color: "#ffffff" },
-  { Icon: Database, name: "MongoDB", color: "#47A248" },
-
-  { Icon: Coffee, name: "Java", color: "#f89820" },
-  { Icon: Code2, name: "Data Structures & Algorithms", color: "#8b5cf6" },
-
-  { Icon: Layout, name: "HTML5", color: "#e34f26" },
-  { Icon: Palette, name: "CSS3", color: "#264de4" },
   { Icon: Layers, name: "Tailwind CSS", color: "#38bdf8" },
-
-  { Icon: Globe, name: "Next.js", color: "#ffffff" },
-  { Icon: Palette, name: "Figma", color: "#f24e1e" },
+  { Icon: ChartLine, name: "Chart.js", color: "#ff6384" },
+  { Icon: Activity, name: "Streamlit", color: "#ff4b4b" },
+  { Icon: Coffee, name: "Java", color: "#f89820" },
+  { Icon: Triangle, name: "Vercel", color: "#ffffff" },
+  { Icon: Cloud, name: "Render", color: "#46e3b7" },
+  { Icon: GitBranch, name: "Git / GitHub", color: "#f05032" },
 ];
 
 
 export default function Skills() {
-  // Row splitting logic
-  const row1 = techIcons.slice(0, 8);
-  const row2 = techIcons.slice(8);
 
   return (
     <section className="skill-part">

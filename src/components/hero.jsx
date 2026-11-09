@@ -14,8 +14,8 @@ export default function Hero() {
 
         {/* ABOUT / INTRO */}
         <p className="tagline">
-          I’m a Computer Science Engineering student with a specialization in IoT,
-          focused on building scalable full-stack web applications.
+          CSE student at VIT Vellore. I solve problems in Java, train models in Python
+          and write code that runs on a chip strapped to your wrist.
         </p>
 
         

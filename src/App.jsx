@@ -45,16 +45,13 @@ function App() {
         <p className="section-title">About Me</p>
 
         <p className="about-text">
-          I am a Computer Science Engineering student specializing in IoT, with a strong
-          interest in full-stack web development. I enjoy building scalable and
-          user-focused web applications using the MERN stack.
-        </p>
-
-        <p className="about-text">
-          Alongside development, I actively practice Data Structures and Algorithms in Java
-          to strengthen my problem-solving skills and improve code efficiency. I believe
-          combining strong fundamentals with practical development helps in building
-          reliable and impactful software solutions.
+          I like problems that fight back. I sharpen my DSA in Java and
+          built a visualizer that lets you watch sorting and searching algorithms work,
+          step by step. In machine learning, I've built a heart-disease
+          predictor that explains itself with SHAP and a risk model small enough to run on
+          an ESP32. In IoT, I build devices that catch trouble as it
+          starts, from overheating e-scooter batteries to unusual heart rates, and get the
+          data to the cloud even when Wi-Fi drops.
         </p>
       </section>
 

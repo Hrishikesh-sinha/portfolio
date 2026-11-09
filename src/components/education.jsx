@@ -16,7 +16,7 @@ export default function Education() {
                 <h3>Vellore Institute Of Technology </h3>
                 <span className="org-name"> B.Tech. - Computer Science and Engineering</span>
               </div>
-              <span className="item-date">2023 — 2027 <br />CGPA:8/10</span>
+              <span className="item-date">2023 — 2027</span>
             </div>
             <p className="about-text" style={{fontSize: '0.85rem', marginTop: '4px'}}>
             </p>
